@@ -83,17 +83,6 @@ Most requests had a response time lower than 1s.
 > - **1.0 second** is about the limit for the user's flow of thought to stay uninterrupted, even though the user will notice the delay. Normally, no special feedback is necessary during delays of more than 0.1 but less than 1.0 second, but the user does lose the feeling of operating directly on the data.
 > - **10 seconds** is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect.
 
-### Documentation
-
-This project contains an introduction short video, documents for test flows and
-test cases for the user interface tests and for defects found during development.
-They are on the `documentation` folder as follows:
-
-1. Test flows are on individual PNG images.
-2. Test cases are on the **TOPTAL-2021-10-24.html** file.
-3. Defects are on the **TOPTAL-2021-10-24.ods** spreadsheet.
-4. The short video is a MKV file.
-
 ## Built With
 
 * [Python](https://www.python.org/) - Programming language
