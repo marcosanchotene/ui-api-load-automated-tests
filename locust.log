@@ -1,0 +1,6 @@
+[2021-11-02 09:25:36,333] skynet/INFO/locust.main: Starting web interface at http://0.0.0.0:8089 (accepting connections from all network interfaces)
+[2021-11-02 09:25:36,354] skynet/INFO/locust.main: Starting Locust 2.4.1
+[2021-11-02 09:26:39,092] skynet/INFO/locust.runners: Ramping to 1000 users at a rate of 50.00 per second
+[2021-11-02 09:27:00,434] skynet/INFO/locust.runners: All users spawned: {"User": 1000} (1000 total users)
+[2021-11-02 09:27:22,071] skynet/WARNING/root: CPU usage above 90%! This may constrain your throughput and may even give inconsistent response time measurements! See https://docs.locust.io/en/stable/running-locust-distributed.html for how to distribute the load over multiple CPU cores or machines
+[2021-11-02 09:27:26,338] skynet/WARNING/locust.runners: CPU usage was too high at some point during the test! See https://docs.locust.io/en/stable/running-locust-distributed.html for how to distribute the load over multiple CPU cores or machines

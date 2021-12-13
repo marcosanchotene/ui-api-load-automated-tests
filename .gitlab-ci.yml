@@ -1,0 +1,9 @@
+default:
+  image: python:3.8
+
+  before_script:
+    - pipenv install
+
+test:
+  script:
+    - pytest

@@ -1,0 +1,5 @@
+<osm version="0.6" generator="CGImap 0.8.5 (2133656 errol.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="1" visible="true" version="1" changeset="225350" timestamp="2021-10-24T05:41:06Z" user="msan" uid="12026" lat="45.0000000" lon="31.0000000">
+  <tag k="note" v="Just a node" />
+ </node>
+</osm>

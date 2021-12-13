@@ -1,0 +1,5 @@
+<osm>
+	<node changeset="" lat="45" lon="31">
+		<tag k="note" v="Just a node" />
+	</node>
+</osm>

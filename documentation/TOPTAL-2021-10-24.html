@@ -1,0 +1,581 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+        html {
+            font-size: 16px;
+            font-family: "Open Sans", Helvetica, sans-serif;
+        }
+        body {
+            padding: 50px;
+            max-width: 700px;
+            width: 700px;
+        }
+        .page {
+            overflow: hidden;
+            page-break-after: always;
+            margin-bottom: 250px;
+        }
+        h1 {
+            margin-top: 0.25rem;
+            font-size: 1.5rem;
+        }
+        .row {
+            width: 100%;
+        }
+        .col-3 {
+            width: 25%;
+            float:left;
+        }
+        .col-4 {
+            width: 33.33%;
+            float:left;
+        }
+        .col-12 {
+            width: 100%;
+            float: left;
+        }
+        .param {
+            font-size: 0.875rem;
+            font-weight: normal;
+        }
+
+        .color-blocker, .color-critical, .color-major, .color-high {
+            color: #D0021B;
+        }
+
+        .conditions-header {
+            font-size: 0.875rem;
+            font-weight: bold;
+            padding-bottom: 0.25rem;
+        }
+
+        .conditions-data {
+            font-weight: normal;
+            font-size: 0.875rem;
+        }
+
+        .clearfix::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .data-row {
+            margin-top: 1rem;
+        }
+
+        .table-steps {
+            width: 100%;
+        }
+        .table-steps td {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #dedede;
+        }
+        .table-steps th {
+            font-size: 0.875rem; text-align: left;
+        }
+        .table-steps p {
+            margin-bottom: 0;
+        }
+        .steps ol, .steps ul {
+            margin-bottom: 0;
+            padding-left: 1.125rem;
+        }
+        .steps li {
+            font-size: 0.875rem;
+        }
+
+        .step-position span {
+            padding: .25rem 0.75rem;
+            display: block;
+            margin-right: .75rem;
+            border-radius: .25rem;
+            color: #636363;
+            background: #f3f3f3;
+        }
+
+        .step-action p {
+            display: none;
+        }
+
+        .step-content p.data {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            font-size: 0.875rem !important;
+            margin-top: 0 !important;
+        }
+        .description p{
+            font-size: 0.875rem !important;
+            margin-top: 0 !important;
+        }
+
+        .table-steps img,
+        .description img,
+        .markdown img {
+            max-width: 100%;
+        }
+
+        .attachments {vertical-align: top;}
+        .attachments .attachment{width:96px;display:inline-block; margin-right: 8px; vertical-align: top}
+        .attachments .attachment-image{width:96px;height:96px;border-radius:6px;background-size:cover !important;}
+        .attachments .attachment-file{width:96px;height:96px;background:#e9e9e9;border-radius:6px;}
+        .attachments .attachment-file .attachment-extension{display:inline-block; text-decoration:none !important;font-weight:500;color:#000; padding-left: 8px; padding-top: 8px; font-size: 0.75rem;}
+        .attachments .attachment .attachment-filename{width:96px;display:block; text-overflow:ellipsis;white-space:nowrap;margin-top:0.5rem;overflow:hidden;text-decoration:none;color:#656565;font-size:0.625rem;}
+        .attachments .attachment a {text-decoration:none !important;border-bottom: 0;}
+    </style>
+    <link rel="stylesheet" href="https://app.qase.io/css/fontawesome.min.css?1635005569">
+</head>
+<body>
+                                <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TOPTAL-2
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> User should sign in with valid username and password</h1>
+        <div class="description"><p>The system should authorize a user to sign in with a valid username and password.</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-minus color-normal"></i> Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                        <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Automation</h3>
+                <span class="param">
+                                            Automated
+                                        </span>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Status</h3>
+                <span class="param">
+                                            Actual
+                                        </span>
+            </div>
+                <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>The user must be registered on the system.</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                    <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                            <div class="case-steps-case mt-4">
+                            <div class="steps">
+                                <table class="table-steps" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <th width="10%">Step</th>
+                                        <th width="30%">Action</th>
+                                        <th width="30%">Input data</th>
+                                        <th width="30%">Expected result</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td style="font-size: 0.875rem;">1</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Load the website home page.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="http://automationpractice.multiformis.com/" target="_blank">http://automationpractice.multiformis.com/</a></p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The home page is loaded by the browser.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">2</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click on the sign in button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The authentication page is loaded.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">3</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Fill email address field.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>james@gmail.com</p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The email field displays the email entered.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">4</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Fill password field</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>P@ss1234</p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The password field displays * for each character of the password entered.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">5</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click the Sign in button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The My Account page is loaded.</p></td>
+                                        </tr>
+                                                                                                            </table>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TOPTAL-3
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> System should display products searched by user if they exist</h1>
+        <div class="description"><p>A user should be able to search for products and the system should display them if they are registered on the database.</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-minus color-normal"></i> Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                        <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Automation</h3>
+                <span class="param">
+                                            Automated
+                                        </span>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Status</h3>
+                <span class="param">
+                                            Actual
+                                        </span>
+            </div>
+                <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Products must be registered on the database.</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                    <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                            <div class="case-steps-case mt-4">
+                            <div class="steps">
+                                <table class="table-steps" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <th width="10%">Step</th>
+                                        <th width="30%">Action</th>
+                                        <th width="30%">Input data</th>
+                                        <th width="30%">Expected result</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td style="font-size: 0.875rem;">1</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Load the website home page.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="http://automationpractice.multiformis.com/" target="_blank">http://automationpractice.multiformis.com/</a></p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The home page is loaded by the browser.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">2</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Type search terms in the search field.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Faded Short Sleeves T-shirt</p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The field displays the search terms entered.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">3</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click the search button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The results page is displayed with products related to the search terms.</p></td>
+                                        </tr>
+                                                                                                            </table>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TOPTAL-4
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Product should be added to shopping cart by user</h1>
+        <div class="description"><p>A user can add a product to their shopping cart when signed in.</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-minus color-normal"></i> Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                        <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Automation</h3>
+                <span class="param">
+                                            Automated
+                                        </span>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Status</h3>
+                <span class="param">
+                                            Actual
+                                        </span>
+            </div>
+                <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>The user must be signed in on the website.</p></div>
+                    </div>
+                                                    <div class="data-row">
+                        <div class="conditions-header">Post-conditions</div>
+                        <div class="conditions-data markdown"><p>The product is added to the cart.</p></div>
+                    </div>
+                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                    <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                            <div class="case-steps-case mt-4">
+                            <div class="steps">
+                                <table class="table-steps" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <th width="10%">Step</th>
+                                        <th width="30%">Action</th>
+                                        <th width="30%">Input data</th>
+                                        <th width="30%">Expected result</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td style="font-size: 0.875rem;">1</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Load a page with products.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="http://automationpractice.multiformis.com" target="_blank">http://automationpractice.multiformis.com</a></p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The browser loads the page.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">2</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Hover the mouse over one product.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The system displays the Add to cart button.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">3</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click the Add to cart button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The system adds the product to the cart and displays the cart modal.</p></td>
+                                        </tr>
+                                                                                                            </table>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TOPTAL-5
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> User should checkout order successfully</h1>
+        <div class="description"><p>A user should be able to proceed to checkout and confirm their order.</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-minus color-normal"></i> Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                        <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Automation</h3>
+                <span class="param">
+                                            Automated
+                                        </span>
+            </div>
+            <div class="col-3">
+                <h3 style="font-size: 0.875rem;">Status</h3>
+                <span class="param">
+                                            Actual
+                                        </span>
+            </div>
+                <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>The user must be signed in, must have an address registered and must have added products to the shopping cart.</p></div>
+                    </div>
+                                                    <div class="data-row">
+                        <div class="conditions-header">Post-conditions</div>
+                        <div class="conditions-data markdown"><p>The order is confirmed.</p></div>
+                    </div>
+                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                    <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                            <div class="case-steps-case mt-4">
+                            <div class="steps">
+                                <table class="table-steps" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <th width="10%">Step</th>
+                                        <th width="30%">Action</th>
+                                        <th width="30%">Input data</th>
+                                        <th width="30%">Expected result</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td style="font-size: 0.875rem;">1</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click Proceed to checkout button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The Shopping-cart summary page is loaded.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">2</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click Proceed to checkout button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The Address page is loaded.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">3</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Choose delivery address.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Home</p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The Shipping page is loaded.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">4</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click checkbox to agree with terms of service.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The checkbox is selected.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">5</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click Proceed to checkout button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The Payment page is loaded.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">6</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Select payment type.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Pay by bank wire.</p></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The Payment mode page is loaded.</p></td>
+                                        </tr>
+                                                                                                                    <tr>
+                                            <td style="font-size: 0.875rem;">7</td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Click the I confirm my order button.</p></td>
+                                            <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+                                            <td style="font-size: 0.875rem; word-break: break-all;"><p>The order confirmation page is loaded.</p></td>
+                                        </tr>
+                                                                                                            </table>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</div>
+            </body>
+</html>
